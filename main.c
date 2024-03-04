@@ -6,7 +6,7 @@ int main() {
 
     // Loop through the array and print each number
     for (int i = 0; i < 5; i++) {
-        printf("%d\n", numbers[i]);
+        printf("Numbers: %d\n", numbers[i]);
     }
 
     return 0;
