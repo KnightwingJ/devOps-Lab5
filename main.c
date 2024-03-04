@@ -8,6 +8,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("Numbers:%d\n", numbers[i]);
     }
+    printf("\n");
     printf("Done\n");
 
     return 0;
