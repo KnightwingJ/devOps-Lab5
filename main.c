@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Declare an array to store 5 numbers
+    // Declare an array to store 6 numbers
     int numbers[] = {1, 2, 3, 4, 5, 6};
 
     // Loop through the array and print each number
