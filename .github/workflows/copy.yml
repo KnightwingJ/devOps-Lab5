@@ -1,23 +1,27 @@
-name: C/C++ CI
+name: Build SimpleCProgram
 
 on:
   push:
-    branches: [ "main" ]
-  
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repo
-      - uses: actions/checkout@v3
-      - name: configure
-        run: ./configure
-      - name: make
-        run: make
-      - name: Upload a Build Artifact
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Main
+        run: make Main 
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: build-artifact
-          path: path/output/artifact.exe
+          name: Main
+          path: main.c
             
