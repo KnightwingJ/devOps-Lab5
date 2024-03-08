@@ -17,11 +17,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Main
-        run: make Main 
+        run: make main 
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Main
+          name: main
           path: main.c
             
